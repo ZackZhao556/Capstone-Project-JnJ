@@ -5,8 +5,8 @@ import sqlite3
 import pandas as pd
  
 s3 = boto3.client('s3')
-s3.download_file('jnj-capstone-2022', 'jnj_capstone.sqlite', 'data/jnj_capstone.sqlite')
-con = sqlite3.connect('data/jnj_capstone.sqlite')
+s3.download_file('jnj-capstone-2022', 'jnj_capstone.sqlite', 'jnj_capstone.sqlite')
+con = sqlite3.connect('jnj_capstone.sqlite')
 
 df = pd.read_sql_query("select * from requests", con)
 print(df.head())

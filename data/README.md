@@ -9,6 +9,7 @@ The data being pulled from `Resolute.AI` is very relational, this is why things 
 1. `base`: this is the "base" table that everything else is based off of. It's not of much use so it can mostly be ignored.
 2. `products`: this has jnj product names and categories with the associated company. This may be useful when performing queries.
 3. `requests`: this is a record of all requests that were made in order to create the database.
+4. `twitter`: this has historical tweets given some queries on the twitter API. Not all tweets are guaranteed to be JNJ related.
 
 The naming convension of all other tables goes like this:
 
